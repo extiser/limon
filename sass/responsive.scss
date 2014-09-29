@@ -1,0 +1,26 @@
+@import "config.scss";
+
+//screen >1024px landscape and portrait
+@media only screen and (max-width: 1024px) {
+	.wrapper {width: 100%;}
+	
+	// header
+	@import "responsive-blocks/header-large.scss";
+
+	//screen >768px landscape and portrait
+	@media (max-width: 768px) {
+		// header
+		@import "responsive-blocks/header-medium-lp.scss";
+	}
+
+	//screen >768px portrait
+	@media (max-width: 768px) and (orientation: portrait) {
+		// header
+		@import "responsive-blocks/header-medium-p.scss";
+	} 
+	//screen >640px portrait
+	@media (max-width: 640px) {
+		// header
+		@import "responsive-blocks/header-small-p.scss";
+	}
+}

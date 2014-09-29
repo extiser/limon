@@ -1,0 +1,48 @@
+.news {
+	.message-info {
+		height: 56px;
+		padding: 14px 0 0 0;
+		margin: 0 0 15px 0;
+		border: 1px dotted #e4e4dd;
+		@include background-desktop(message-info, +20px, +12px);
+		background-color: #fafaf7;
+		@include box-sizing;
+		&__text {
+			font-size: 16px;
+			text-align: center;
+			&--button {
+				border: 1px solid #d5e0b6;
+				font-size: 14px;
+				color: #75a122;
+				@include background-image(linear-gradient(#f9fdef, #f0f7dd));
+				display: inline-block;
+				vertical-align: middle;
+				width: 65px;
+				height: 30px;
+				@include box-sizing;
+				padding: 5px 0 0 0;
+				@include border-radius(4px);
+				margin: -2px 0 0 15px;
+			}
+		}
+	}
+	.news-list {
+		.news-list__item {
+			padding: 32px 23px 23px 73px;
+			border: 1px dotted #e4e4dd;
+			position: relative;
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				left: 23px;
+				top: 23px;
+				@include sprite-dimensions($desktop, news-list-item);
+				@include background-desktop(news-list-item);
+			}
+			p {
+				margin: 15px 0;
+			}
+		}
+	}
+}

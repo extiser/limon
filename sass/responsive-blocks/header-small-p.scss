@@ -1,0 +1,69 @@
+	.header {
+		width: 100%;
+		max-width: $small;
+		&__top {
+			@include flex(flex, space-around, flex-start);
+			font-size: 9px;
+			&--logo {
+				@include order(1);
+				@include align-self(center);
+				@include background-mobile(logo);
+				@include sprite-dimensions($mobile, logo);
+			}
+			&--earn {
+				display: none;
+			}
+			%web-small {
+				width: 40px;
+				@include box-sizing;
+				dl {
+					dt {
+						display: block;
+						float: none;
+						text-align: center;
+						background: #87bd23;
+						color: #fff;
+						@include box-sizing;
+						padding: 0 5px;
+					}
+					dd {
+						display: none;
+					}
+				}
+				&.-active {
+					width: 100px;
+					dt {
+						color: #87bd23;
+						background: none;
+						text-align: left;
+						margin: 0 0 0 -12px;
+					}
+					dd {
+						display: block;
+					}
+				}
+			}
+			&--web {
+				@extend %web-small;
+				@include order(3);
+			}
+			&--wap {
+				@extend %web-small;
+				@include order(4);
+			}
+			&--stat {
+				@extend %web-small;
+				@include order(2);
+				&.-active {
+					width: 120px;
+					dt {
+						margin: 0 0 0 -6px;
+ 					}
+					dd {
+						width: 120px;
+						margin: 0 0 0 15px;
+					}
+				}
+			}
+		}
+	}

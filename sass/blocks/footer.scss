@@ -1,0 +1,25 @@
+.footer {
+	width: 100%;
+	border-top: 1px solid #dfdfd7;
+	padding: 3px 0;
+	margin: 60px 0 0 0;
+	.wrapper {
+		@include flex(flex, flex-start, center);
+		.logo-footer {
+			@include background-desktop(logo-footer);
+			@include sprite-dimensions($desktop, logo-footer);
+		}
+		.footer-menu {
+			margin: 0 0 0 20px;
+			ul {
+				@include flex(flex, flex-start, center);
+				li {
+					margin: 0 20px 0 0;
+					a {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+}

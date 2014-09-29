@@ -1,0 +1,117 @@
+.header {
+	width: $dwidth;
+	@include box-sizing;
+	&__top {
+		@include flex(flex, space-around, center);
+		padding: 15px 0 0 0;
+		&--logo {
+			display: block;
+			@include background-desktop(logo);
+			@include sprite-dimensions($desktop, logo);
+			border: 0;
+		}
+		&--earn {
+			width: 540px;
+			text-align: center;
+			p {
+				font-weight: bold;
+			}
+		}
+		&--web {
+			width: 140px;
+			dl {
+				dt {
+					float: left;
+					color: #87bd23;
+				}
+				dd {
+					width: 95px;
+					display: block;
+					float: right;
+					position: relative;
+					color: #999;
+					&:before {
+						content: "";
+						display: block;
+						width: 9px;
+						height: 9px;
+						position: absolute;
+						@include border-radius(50%);
+						@include box-sizing;
+						left: -12px;
+						top: 5px;
+						border: 2px solid;
+					}
+					&.green {
+						&:before {
+							color: #87bd23;
+						}
+					}
+					&.red {
+						&:before {
+							color: #dd5b22;
+						}
+					}
+					&.yellow {
+						&:before {
+							color: #ffba00;
+						}
+					}
+					span {
+						&.red {
+							color: #dd5b22;
+						}
+						&.yellow {
+							color: #ffba00;
+						}
+					}
+				}
+			}
+		}
+		&--wap {
+			@extend .header__top--web;
+		}
+		&--stat {
+			margin: 0 0 0 13px;
+			dl {
+				dt {
+					display: none;
+				}
+				dd {
+					width: 140px;
+					position: relative;
+					margin: 0 0 3px 0;
+					float: none;
+					&:before {
+						content: "";
+						display: block;
+						position: absolute;
+						left: -20px;
+						top: 2px;
+					}
+					strong {
+						font-weight: bold;
+					}
+					&.-rate {
+						&:before {
+							@include background-desktop(rate);
+							@include sprite-dimensions($desktop, rate);
+						}
+					}
+					&.-balance-rub {
+						&:before {
+							@include background-desktop(balance-rub);
+							@include sprite-dimensions($desktop, balance-rub);
+						}
+					}
+					&.-balance-lemon {
+						&:before {
+							@include background-desktop(balance-lemon);
+							@include sprite-dimensions($desktop, balance-lemon);
+						}
+					}
+				}
+			}
+		}
+	}	
+}

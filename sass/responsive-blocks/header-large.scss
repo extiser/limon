@@ -1,0 +1,16 @@
+	.header {
+		width: 100%;
+		max-width: $large;
+		&__top {
+			&--earn {
+				display: none;
+			}
+			&--stat {
+				dl {
+					dd {
+						width: 150px;
+					}
+				}
+			}
+		}
+	}

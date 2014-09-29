@@ -1,0 +1,25 @@
+	.header {
+		&__top {
+			&--logo {
+				@include align-self(center);
+				@include background-desktop(logo);
+				@include sprite-dimensions($desktop, logo);
+			}
+			%web-medium-portrait {
+				dl {
+					dd {
+						margin: 0 0 0 12px;
+						&:before {
+							display: block;
+						}
+					}
+				}
+			}
+			&--web {
+				@extend %web-medium-portrait;
+			}
+			&--wap {
+				@extend %web-medium-portrait;
+			}
+		}
+	}

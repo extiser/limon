@@ -1,0 +1,36 @@
+	.header {
+		width: 100%;
+		max-width: $medium;
+		&__top {
+			&--logo {
+				@include align-self(center);
+				@include background-mobile(logo);
+				@include sprite-dimensions($mobile, logo);
+			}
+			&--earn {
+				display: none;
+			}
+			%web-medium {
+				width: 110px;
+				dl {
+					dt {
+						float: none;
+						display: block;
+					}
+					dd {
+						float: none;
+						margin: 0;
+						&:before {
+							display: none;
+						}
+					}
+				}
+			}
+			&--web {
+				@extend %web-medium;
+			}
+			&--wap {
+				@extend %web-medium;
+			}
+		}
+	}
