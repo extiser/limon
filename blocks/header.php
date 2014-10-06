@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/responsive.css" rel="stylesheet" type="text/css" />
     <!--[if lt IE 10]>
       	<link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
       	<script src="http://yastatic.net/jquery/1.8.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>

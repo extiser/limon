@@ -1,23 +1,20 @@
 /*
 Error: Undefined mixin 'flex'.
-        on line 7 of C:/WebServers/home/web.limon.com/www/sass/blocks/main-menu.scss, in `flex'
-        from line 7 of C:/WebServers/home/web.limon.com/www/sass/blocks/main-menu.scss
+        on line 3 of C:/WebServers/home/web.limon.com/www/sass/blocks/pages/statistics.scss, in `flex'
+        from line 3 of C:/WebServers/home/web.limon.com/www/sass/blocks/pages/statistics.scss
 
-2: 	width: 100%;
-3: 	background: #f6f6ef;
-4: 	border-bottom: 2px solid #87bd23;
-5: 	margin: 15px 0;
-6: 	&__container {
-7: 		@include flex(flex, space-around, center);
-8: 		&--item {
-9: 			width: $dwidth / 9;
-10: 			text-align: center;
-11: 			height: 45px;
-12: 			> a {
+1: .statistics {
+2: 	.filter {
+3: 		@include flex(flex, space-between, center);
+4: 		&__group {
+5: 			width: 850px;
+6: 		}
+7: 		&__by-week {
+8: 			width: 366px;
 
 Backtrace:
-C:/WebServers/home/web.limon.com/www/sass/blocks/main-menu.scss:7:in `flex'
-C:/WebServers/home/web.limon.com/www/sass/blocks/main-menu.scss:7
+C:/WebServers/home/web.limon.com/www/sass/blocks/pages/statistics.scss:3:in `flex'
+C:/WebServers/home/web.limon.com/www/sass/blocks/pages/statistics.scss:3
 C:/Program Files/Ruby2/lib/ruby/gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
 C:/Program Files/Ruby2/lib/ruby/gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files/Ruby2/lib/ruby/gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
@@ -81,4 +78,4 @@ C:/Program Files/Ruby2/lib/ruby/gems/2.0.0/gems/listen-1.3.1/lib/listen/adapter.
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flex'.\A         on line 7 of C:/WebServers/home/web.limon.com/www/sass/blocks/main-menu.scss, in `flex'\A         from line 7 of C:/WebServers/home/web.limon.com/www/sass/blocks/main-menu.scss\A \A 2: 	width: 100%;\A 3: 	background: #f6f6ef;\A 4: 	border-bottom: 2px solid #87bd23;\A 5: 	margin: 15px 0;\A 6: 	&__container {\A 7: 		@include flex(flex, space-around, center);\A 8: 		&--item {\A 9: 			width: $dwidth / 9;\A 10: 			text-align: center;\A 11: 			height: 45px;\A 12: 			> a {"; }
+  content: "Error: Undefined mixin 'flex'.\A         on line 3 of C:/WebServers/home/web.limon.com/www/sass/blocks/pages/statistics.scss, in `flex'\A         from line 3 of C:/WebServers/home/web.limon.com/www/sass/blocks/pages/statistics.scss\A \A 1: .statistics {\A 2: 	.filter {\A 3: 		@include flex(flex, space-between, center);\A 4: 		&__group {\A 5: 			width: 850px;\A 6: 		}\A 7: 		&__by-week {\A 8: 			width: 366px;"; }

@@ -1,0 +1,56 @@
+.statistics {
+	.filter {
+		@include flex(flex, space-between, center);
+		&__group {
+			width: 850px;
+		}
+		&__by-week {
+			width: 366px;
+			text-align: right;
+		}
+		&__choice {
+			margin: 10px 0 0 0;
+			.select {
+				&.select--choice {
+					display: inline-block;
+					width: 208px;
+				} 
+			}
+		}
+		&__date {
+			margin: 10px 0 0 0;
+			.date {
+				width: 160px;
+			}
+			&--title {
+				font-size: 16px;
+				color: #333;
+			}
+		}
+	}
+	.table-stat {
+		margin: 10px 0 0 0;
+		&__row {
+			width: $dwidth;
+			&--cell {
+				width: $dwidth / 16;
+			}
+		}
+	}
+	.table-footer {
+		margin: 15px 0 0 0;
+		@include flex(flex, space-between, center);
+		&__active-pdp {
+			span {
+				color: #75a122;
+			}
+		}
+		&__referal-link {
+			font-size: 16px;
+			.input {
+				width: 300px;
+				font-size: 13px;
+			}
+		}
+	}
+}

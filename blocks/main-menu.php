@@ -2,7 +2,7 @@
 	<div class="wrapper">
 		<ul class="main-menu__container">
 			<li class="main-menu__container--item"><a href="/news.php">Новости</a></li>
-			<li class="main-menu__container--item -active"><a href="/statistics.php">Статистика</a>
+			<li class="main-menu__container--item"><a href="/statistics.php">Статистика</a>
 				<ul>
 					<li class="-active"><a href="#">Общая</a></li>
 					<li><a href="#">Подписки</a></li>
@@ -16,7 +16,20 @@
 					<li><a href="#">Рефералы</a></li>
 				</ul>
 			</li>
-			<li class="main-menu__container--item"><a href="#">Сайты</a></li>
+			<li class="main-menu__container--item -active"><a href="/site.php">Сайты</a>
+				<ul>
+					<li><a href="#">ТОП сайты</a></li>
+					<li><a href="#">Адалт</a></li>
+					<li><a href="#">Адалт-игры</a></li>
+					<li><a href="#">Игры</a></li>
+					<li><a href="#">Развлечения</a></li>
+					<li><a href="#">Файлы</a></li>
+					<li><a href="#">WAP</a></li>
+					<li><a href="#">APK</a></li>
+					<li><a href="#">Другие</a></li>
+					<li><a href="#">Проверка доменов</a></li>
+				</ul>
+			</li>
 			<li class="main-menu__container--item"><a href="#">Промо</a></li>
 			<li class="main-menu__container--item"><a href="#">ТДС</a></li>
 			<li class="main-menu__container--item"><a href="#">Финансы</a></li>

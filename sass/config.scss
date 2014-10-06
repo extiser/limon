@@ -98,14 +98,6 @@ body {
 	margin: auto;
 	@include box-sizing;
 }
-a {
-	text-decoration: none;
-	border-bottom: 1px solid #B8C0D3;
-	&:hover {
-		border-color: #475675;
-	}
-	color: #475675;
-}
 @mixin p {
 	font-size: 14px;
 	color: #333;
@@ -126,36 +118,3 @@ h3, h4, h5, h6 {
 }
 // основные стили страницы
 
-
-// классы для адаптивки:
-$solarge: 1280px;
-$large  : 1024px; 	//| Для больших экранов (<1024)
-$medium : 768px;    //| Для планшетов и маленьких экранов (<=1024)
-$small  : 640px;    //| Для телефонов (<=768)
-
-@mixin respond-to($media, $orientation) {
-  @if $media == solarge {
-    @media only screen and (max-width: $solarge) { 
-		.wrapper {width: 100%;}
-    	@content; 
-    }
-  }
-  @else if $media == large {
-    @media only screen and (max-width: $large) { 
-    	.wrapper {width: 100%;}
-    	@content;  
-    }
-  }
-  @else if $media == medium {
-    @media only screen and (max-width: $medium) { 
-    	.wrapper {width: 100%;}
-    	@content;  
-    }
-  }
-  @else if $media == small {
-    @media only screen and (max-width: $small) and (orientation: $orientation)  { 
-		.wrapper {width: 100%;}
-    	@content; 
-    }
-  }
-}

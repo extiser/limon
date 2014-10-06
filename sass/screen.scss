@@ -1,4 +1,5 @@
 @import "config.scss";
+@import "ui.scss";
 
 //header
 @import "blocks/header.scss";
@@ -9,3 +10,6 @@
 
 @import "blocks/pages/news.scss";
 
+@import "blocks/pages/statistics.scss";
+
+@import "blocks/pages/site.scss";

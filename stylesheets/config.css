@@ -85,15 +85,6 @@ body {
   -webkit-box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  border-bottom: 1px solid #B8C0D3;
-  color: #475675;
-}
-a:hover {
-  border-color: #475675;
-}
-
 h1 {
   font-size: 23px;
   color: #d02653;

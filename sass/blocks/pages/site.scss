@@ -1,0 +1,59 @@
+.site {
+	@include flex(flex, space-between, center);
+	.sidebar {
+		width: 245px;
+		padding: 14px 23px;
+		@include border-radius(5px);
+		@include box-shadow(0 0 6px #dbdbdb);
+		@include box-sizing;
+		&__category-name {
+			color: #c3c3bb;
+			font-size: 14px;
+		}
+		&__category-list {
+			&--item {
+				display: block;
+				margin: 15px 0;
+				a {
+					font-size: 16px;
+					color: #333;
+					text-transform: uppercase;
+					border-bottom: 1px dashed #a1bd50;
+					&:hover {
+						border-style: solid;
+					}
+				}
+			}
+			&--active {
+				@extend .plask;
+				width: 245px;
+				left: -24px;
+				border-color: #efefeb;
+				padding-top: 11px; 
+				padding-left: 23px;
+				a {
+					border-bottom: 0;
+					font-weight: bold;
+				}
+			}
+			&--new {
+				a {
+					position: relative;
+					&:after {
+						position: absolute;
+						content: "NEW";
+						font-size: 10px;
+						line-height: 1;
+						font-weight: bold;
+						color: #fff;
+						background: #87bd23;
+						@include border-radius(4px);
+						padding: 2px 3px;
+						top: 5px;
+						right: -29px;
+					}
+				}
+			}
+		}
+	}
+}

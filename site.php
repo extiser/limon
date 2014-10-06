@@ -5,7 +5,7 @@
 	<?php include('blocks/main-menu.php'); ?>
 
 	<!-- Блок новостей -->
-	<?php include('blocks/pages/news.php'); ?>
+	<?php include('blocks/pages/site.php'); ?>
 
 	<!-- Блок футера -->
 	<? include('blocks/footer.php'); ?>
