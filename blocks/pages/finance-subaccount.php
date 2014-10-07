@@ -1,6 +1,6 @@
-<div class="finance-subaccount">
-	<div class="finance-subaccount__left">
-		<div class="finance-subaccount__title">Рабочие сабаккаунты</div>
+<div class="finance finance-subaccount">
+	<div class="finance__left">
+		<div class="finance__title">Рабочие сабаккаунты</div>
 
 		<div class="table table-finance-subaccount">
 			<div class="table__row table__row--header table-finance-subaccount__row table-finance-subaccount__row--header">
@@ -66,7 +66,7 @@
 			</div>
 		</div>
 
-		<div class="finance-subaccount__title">Удаленные сабаккаунты</div>
+		<div class="finance__title">Удаленные сабаккаунты</div>
 
 		<div class="table table-finance-subaccount">
 			<div class="table__row table__row--header table-finance-subaccount__row table-finance-subaccount__row--header">
@@ -109,10 +109,10 @@
 		</div>
 	</div>
 
-	<div class="finance-subaccount__right">
-		<div class="finance-subaccount__title finance-subaccount__right--title">Создание нового сабаккаунта</div>
+	<div class="finance__right">
+		<div class="finance__title finance__right--title">Создание нового сабаккаунта</div>
 
-		<div class="finance-subaccount__form">
+		<div class="finance__form">
 			<form>
 				<label>Название: </label>
 				<input type="text" name="" value="" class="input">
@@ -123,8 +123,8 @@
 				<label>Автокредиты: </label>
 				<input type="checkbox" name="" value="">
 
-				<span class="finance-subaccount__form--validator">Поле "Название" обязательно к заполнению</span>
-				<span class="finance-subaccount__form--validator">При установке "Автокредиты", подписки на данном сабаккаунте (sid) не смогут быть выставлены на Биржу подписок </span>
+				<span class="finance__form--validator">Поле "Название" обязательно к заполнению</span>
+				<span class="finance__form--validator">При установке "Автокредиты", подписки на данном сабаккаунте (sid) не смогут быть выставлены на Биржу подписок </span>
 			
 				<input type="submit" class="btn btn--active" value="Создать">
 			</form>

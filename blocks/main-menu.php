@@ -34,8 +34,8 @@
 			<li class="main-menu__container--item"><a href="#">ТДС</a></li>
 			<li class="main-menu__container--item -active"><a href="#">Финансы</a>
 				<ul>
-					<li class="-active"><a href="/finance-subaccount.php">Сабаккаунты</a></li>
-					<li><a href="#">Счетчики</a></li>
+					<li><a href="/finance-subaccount.php">Сабаккаунты</a></li>
+					<li class="-active"><a href="/finance-counters.php">Счетчики</a></li>
 					<li><a href="#">Парковка</a></li>
 					<li><a href="#">Профиль</a></li>
 				</ul>

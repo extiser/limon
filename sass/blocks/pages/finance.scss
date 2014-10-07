@@ -19,6 +19,24 @@
 				}
 			}
 		}
+		.table-finance-counters {
+			width: 845px;
+			&__row {
+				&--cell {
+					&:first-child {
+						text-align: left;
+						padding-left: 11px;
+					}
+					span {
+						color: #81a83d;
+					}
+				}
+			}
+			&--btn {
+				padding: 2px 5px;
+			}
+			
+		}
 	}
 	&__right {
 		&--title {
@@ -35,13 +53,16 @@
 			font-size: 16px;
 			font-weight: bold;
 		}
-		.input {
+		.input, &--scroll {
 			width: 100%;
 			margin: 5px 0 15px 0;
 		}
 		input[type=checkbox] {
 			position: relative;
 			top: 2px;
+		}
+		textarea.input {
+			height: auto;
 		}
 		&--validator {
 			display: block;
@@ -55,6 +76,26 @@
 				left: 0;
 				@include background-desktop(validator);
 				@include sprite-dimensions($desktop, validator);
+			}
+		}
+		&--scroll {
+			@extend .select;
+			background: #fff;
+			height: 205px;
+			padding: 5px;
+			overflow-y: scroll;
+			label {
+				font-size: 13px;
+				&:after {
+					content: "";
+					display: block;
+				}
+			}
+		}
+		&--choice-subaccount {
+			margin: 0 0 15px 0;
+			.label {
+				font-size: 13px;
 			}
 		}
 	}

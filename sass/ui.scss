@@ -3,13 +3,12 @@
 	display: table;
 	border-collapse: collapse;
 	&__row {
-		//width: $dwidth; ширина по умолчанию
 		display: table-row;
 		border-bottom: 1px dashed #cdcdcd;
 		&--header, &--footer {
 			background: #fbfadb;
 			border-top: 3px solid #e7e5b2;
-			font-size: 12px;
+			font-size: 14px;
 			color: #6a5f0f;
 		}
 		&--footer {
@@ -22,7 +21,6 @@
 			}
 		}
 		&--cell {
-			//width: $dwidth / 16; разделение на количество колонок
 			display: table-cell;
 			text-align: center;
 			padding: 8px 0;

@@ -111,7 +111,7 @@ h3, h4, h5, h6 {
 .table__row--header, .table__row--footer {
   background: #fbfadb;
   border-top: 3px solid #e7e5b2;
-  font-size: 12px;
+  font-size: 14px;
   color: #6a5f0f;
 }
 .table__row--footer {
@@ -152,7 +152,7 @@ h3, h4, h5, h6 {
   color: #75a122;
 }
 
-.select, .date {
+.select, .date, .finance__form--scroll {
   border: 1px solid #e8e8e8;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -576,7 +576,7 @@ a:hover {
 .statistics .filter__choice {
   margin: 10px 0 0 0;
 }
-.statistics .filter__choice .select.select--choice, .statistics .filter__choice .select--choice.date {
+.statistics .filter__choice .select.select--choice, .statistics .filter__choice .select--choice.date, .statistics .filter__choice .select--choice.finance__form--scroll {
   display: inline-block;
   width: 208px;
 }
@@ -693,7 +693,7 @@ a:hover {
   align-items: center;
   margin: 0 0 10px 0;
 }
-.site .top-site__filter .select, .site .top-site__filter .date {
+.site .top-site__filter .select, .site .top-site__filter .date, .site .top-site__filter .finance__form--scroll {
   width: 204px;
 }
 .site .top-site__filter div span {
@@ -828,7 +828,7 @@ a:hover {
   display: inline-block;
   width: 124px;
 }
-.site .top-site__content--right .tabs__box .sms-cost__operator-cost .select, .site .top-site__content--right .tabs__box .sms-cost__operator-cost .date {
+.site .top-site__content--right .tabs__box .sms-cost__operator-cost .select, .site .top-site__content--right .tabs__box .sms-cost__operator-cost .date, .site .top-site__content--right .tabs__box .sms-cost__operator-cost .finance__form--scroll {
   width: 38px;
   padding: 3px 5px 3px 0;
   font-size: 12px;
@@ -868,7 +868,7 @@ a:hover {
   align-items: flex-start;
 }
 
-.finance-subaccount {
+.finance {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-around;
@@ -877,25 +877,38 @@ a:hover {
   align-items: flex-start;
   margin: 85px 0 0 0;
 }
-.finance-subaccount__title {
+.finance__title {
   font-size: 30px;
   margin: 0 0 20px 0;
 }
-.finance-subaccount__left {
+.finance__left {
   width: 845px;
 }
-.finance-subaccount__left .table-finance-subaccount {
+.finance__left .table-finance-subaccount {
   width: 845px;
   margin: 0 0 60px 0;
 }
-.finance-subaccount__left .table-finance-subaccount__row--cell:first-child {
+.finance__left .table-finance-subaccount__row--cell:first-child {
   text-align: left;
   padding-left: 11px;
 }
-.finance-subaccount__right--title {
+.finance__left .table-finance-counters {
+  width: 845px;
+}
+.finance__left .table-finance-counters__row--cell:first-child {
+  text-align: left;
+  padding-left: 11px;
+}
+.finance__left .table-finance-counters__row--cell span {
+  color: #81a83d;
+}
+.finance__left .table-finance-counters--btn {
+  padding: 2px 5px;
+}
+.finance__right--title {
   color: #75a122;
 }
-.finance-subaccount__form {
+.finance__form {
   width: 400px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -904,25 +917,28 @@ a:hover {
   border: 1px dotted #dfdfd7;
   padding: 27px;
 }
-.finance-subaccount__form label {
+.finance__form label {
   font-size: 16px;
   font-weight: bold;
 }
-.finance-subaccount__form .input {
+.finance__form .input, .finance__form--scroll {
   width: 100%;
   margin: 5px 0 15px 0;
 }
-.finance-subaccount__form input[type=checkbox] {
+.finance__form input[type=checkbox] {
   position: relative;
   top: 2px;
 }
-.finance-subaccount__form--validator {
+.finance__form textarea.input {
+  height: auto;
+}
+.finance__form--validator {
   display: block;
   position: relative;
   padding: 0 0 0 20px;
   margin: 15px 0;
 }
-.finance-subaccount__form--validator:before {
+.finance__form--validator:before {
   content: "";
   display: block;
   position: absolute;
@@ -932,4 +948,23 @@ a:hover {
   background-position: 0 -1250px;
   height: 14px;
   width: 14px;
+}
+.finance__form--scroll {
+  background: #fff;
+  height: 205px;
+  padding: 5px;
+  overflow-y: scroll;
+}
+.finance__form--scroll label {
+  font-size: 13px;
+}
+.finance__form--scroll label:after {
+  content: "";
+  display: block;
+}
+.finance__form--choice-subaccount {
+  margin: 0 0 15px 0;
+}
+.finance__form--choice-subaccount .label {
+  font-size: 13px;
 }
