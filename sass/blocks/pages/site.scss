@@ -1,5 +1,5 @@
 .site {
-	@include flex(flex, space-between, center);
+	@include flex(flex, space-between, flex-start);
 	.sidebar {
 		width: 245px;
 		padding: 14px 23px;
@@ -51,6 +51,166 @@
 						padding: 2px 3px;
 						top: 5px;
 						right: -29px;
+					}
+				}
+			}
+		}
+	}
+	.top-site {
+		width: 983px;
+		&__filter {
+			@include flex(flex, space-between, center);
+			margin: 0 0 10px 0;
+			.select {
+				width: 204px;
+			}
+			div {
+				span {
+					font-size: 16px;
+					font-weight: bold;
+				}
+				a {
+					font-size: 14px;
+					display: inline-block;
+					margin: 0 3px;
+					&.active {
+						color: #72a613;
+						font-weight: bold;
+						border: 0;
+					}
+				}
+			}
+		}
+		&__content {
+			@include box-sizing;
+			background: #fafaf7;
+			border: 1px dotted #dfdfd7;
+			padding: 20px 18px;
+			@include flex(flex, space-between, flex-start);
+			&--left {
+				width: 200px;
+				text-align: center;
+				p {
+					font-size: 28px;
+					color: #333;
+					text-align: left;
+				}
+				img {
+					margin: 20px 0 15px;
+				}
+				a {
+					font-size: 16px;
+					border-bottom: 1px dashed #a1bd50;
+					&:hover {
+						border-bottom: 1px solid #a1bd50;
+					}
+				}
+			}
+			&--right {
+				.tabs {
+					width: 717px;
+					&__container {
+						border-bottom: 1px dashed #e3e3dc;
+						@include flex(flex, flex-end, flex-start);
+						&--item {
+							width: 95px;
+							height: 30px;
+							@include box-sizing;
+							text-align: center;
+							padding: 5px 0 0 0;
+							font-size: 14px;
+						}
+						&--item-current {
+							position: relative;
+							height: 31px;
+							top: 1px;
+							border: 1px dashed #e3e3dc;
+							border-bottom: 1px solid #fafaf7;
+							a {
+								color: #72a613;
+								border: 0;
+								font-weight: bold;
+							}
+						}
+					}
+					&__box {
+						padding: 26px 0 0 0;
+						display: none;
+						position: relative;
+						.urls {
+							width: 500px;
+							&__title {
+								font-size: 16px;
+								font-weight: bold;
+								display: inline;
+							}
+							&__content  {
+								font-size: 13px;
+								line-height: 23px;
+								display: inline;
+								@include after-block;
+								a {
+									@include before-block;
+								}
+								.input {
+									width: 100%;
+									margin: 5px 0 0 0;
+								}
+							}
+						}
+						.sms-cost {
+							&__title {
+								font-size: 13px;
+								span {
+									font-size: 16px;
+									font-weight: bold;
+								}
+							}
+							&__block-operators {
+								width: 205px;
+							}
+							&__operator {
+								display: inline-block;
+								width: 53px;
+								margin: 0 5px 0 0;
+								text-align: right;
+							}
+							&__operator-cost {
+								display: inline-block;
+								width: 124px;
+								.select {
+									width: 38px;
+									padding: 3px 5px 3px 0;
+									font-size: 12px;
+									color: #666;
+								}
+							}
+						}
+						.more {
+							position: relative;
+							left: 71px;
+							&:before {
+								content: "";
+								@include background-desktop(more);
+								@include sprite-dimensions($desktop, more);
+								position: absolute;
+								left: -10px;
+								top: 4px;
+							}
+						}
+						.reset {
+							position: absolute;
+							bottom: 16px;
+							right: 25px;
+							text-align: right;
+							width: 100px;
+							a {
+								line-height: 18px;
+							}
+						}
+					}
+					&__box-visible {
+						@include flex(flex, space-between, flex-start);
 					}
 				}
 			}

@@ -7,15 +7,26 @@ $mobile:  sprite-map("mobile/*.png", $spacing: 100px, $icons-sprite-dimensions: 
 $dwidth: 1260px;
 
 // шрифты
+//@font-face {
+  //  font-family: 'droid';
+    //src: url('../fonts/DroidSans-webfont.eot');
+    ///src: url('../fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+       //  url('../fonts/DroidSans-webfont.woff') format('woff'),
+         //url('../fonts/DroidSans-webfont.ttf') format('truetype'),
+         //url('../fonts/DroidSans-webfont.svg#droid_sansregular') format('svg');
+  //  font-weight: normal;
+   // font-style: normal;
+//}
+
 @font-face {
-    font-family: 'droid';
-    src: url('../fonts/DroidSans-webfont.eot');
-    src: url('../fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DroidSans-webfont.woff') format('woff'),
-         url('../fonts/DroidSans-webfont.ttf') format('truetype'),
-         url('../fonts/DroidSans-webfont.svg#droid_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'MyriadPro';
+  src: 	url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),  
+  		url('../fonts/MyriadPro-Regular.otf')  format('opentype'),
+	    url('../fonts/MyriadPro-Regular.woff') format('woff'), 
+	    url('../fonts/MyriadPro-Regular.ttf')  format('truetype'), 
+	    url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 // шрифты
 
@@ -31,6 +42,19 @@ $dwidth: 1260px;
 }
 input:focus, a:focus {
 	outline: 0px solid #fff;
+}
+@mixin before-block {
+	&:before {
+		content: "";
+		display: block;
+	}
+}
+@mixin after-block {
+	&:after {
+		content: "";
+		display: block;
+		margin: 0 0 15px 0;
+	}
 }
 // сбросы стилей clear
 
@@ -83,7 +107,7 @@ input:focus, a:focus {
 body {
 	background: #fff;
 	font: {
-		family: 'droid';
+		family: 'MyriadPro';
 		size: 13px;
 	}
 	color: #333;

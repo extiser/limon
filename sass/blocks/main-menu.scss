@@ -14,7 +14,7 @@
 				font-size: 21px;
 				color: #333;
 				display: block;
-				padding: 14px 20px 0 20px;
+				padding: 16px 20px 0 20px;
 				height: 45px;
 				@include box-sizing;
 				&:hover {
@@ -34,7 +34,7 @@
 					position: relative;
 					margin: 0 20px;
 					height: 55px;
-					padding: 18px 0 0 0;
+					padding: 20px 0 0 0;
 					top: 1px;
 					@include box-sizing;
 					a {

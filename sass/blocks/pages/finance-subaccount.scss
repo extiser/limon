@@ -1,0 +1,61 @@
+.finance-subaccount {
+	@include flex(flex, space-around, flex-start);
+	margin: 85px 0 0 0;
+	&__title {
+		font-size: 30px;
+		margin: 0 0 20px 0;
+	}
+	&__left {
+		width: 845px;
+		.table-finance-subaccount {
+			width: 845px;
+			margin: 0 0 60px 0;
+			&__row {
+				&--cell {
+					&:first-child {
+						text-align: left;
+						padding-left: 11px;
+					}
+				}
+			}
+		}
+	}
+	&__right {
+		&--title {
+			color: #75a122;
+		}
+	}
+	&__form {
+		width: 400px;
+		@include box-sizing;
+		background: #fafaf7;
+		border: 1px dotted #dfdfd7;
+		padding: 27px;
+		label {
+			font-size: 16px;
+			font-weight: bold;
+		}
+		.input {
+			width: 100%;
+			margin: 5px 0 15px 0;
+		}
+		input[type=checkbox] {
+			position: relative;
+			top: 2px;
+		}
+		&--validator {
+			display: block;
+			position: relative;
+			padding: 0 0 0 20px;
+			margin: 15px 0;
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				left: 0;
+				@include background-desktop(validator);
+				@include sprite-dimensions($desktop, validator);
+			}
+		}
+	}
+}

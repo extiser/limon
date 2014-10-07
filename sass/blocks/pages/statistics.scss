@@ -30,12 +30,7 @@
 	}
 	.table-stat {
 		margin: 10px 0 0 0;
-		&__row {
-			width: $dwidth;
-			&--cell {
-				width: $dwidth / 16;
-			}
-		}
+		width: $dwidth;
 	}
 	.table-footer {
 		margin: 15px 0 0 0;

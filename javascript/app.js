@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('.main-menu__container > li').click(function() {
-		$('.main-menu__container > li').removeClass('-active');
-		$(this).addClass('-active');
+
+		$(this).addClass('-active').siblings().removeClass('-active');
 
 		if ($(this).children("ul").is("ul") == false) {
 			$(".main-menu").animate({"marginBottom": "15px"}, 400);
@@ -19,5 +19,15 @@ $(document).ready(function() {
 	$(".header__top--web, .header__top--wap, .header__top--stat").click(function() {
 		$(".header__top--web, .header__top--wap, .header__top--stat").removeClass("-active");
 		$(this).addClass("-active");
+	});
+
+	$('#tabs ul').on('click', 'li:not(.tabs__container--item-current)', function() {
+		$(this).addClass('tabs__container--item-current').siblings().removeClass('tabs__container--item-current')
+		.parents('div.tabs').find('div.tabs__box').eq($(this).index())
+		.addClass('tabs__box-visible').siblings('div.tabs__box').removeClass('tabs__box-visible');  
+	});
+
+	$('.top-site__filter div a').click(function() {
+		$(this).addClass('active').siblings().removeClass('active');
 	});
 });
