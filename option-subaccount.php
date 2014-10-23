@@ -5,7 +5,7 @@
 	<?php include('blocks/main-menu.php'); ?>
 
 	<!-- Блок новостей -->
-	<?php include('blocks/pages/finance-subaccount.php'); ?>
+	<?php include('blocks/pages/option-subaccount.php'); ?>
 
 	<!-- Блок футера -->
 	<? include('blocks/footer.php'); ?>

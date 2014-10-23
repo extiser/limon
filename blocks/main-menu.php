@@ -32,17 +32,17 @@
 			</li>
 			<li class="main-menu__container--item"><a href="#">Промо</a></li>
 			<li class="main-menu__container--item"><a href="#">ТДС</a></li>
-			<li class="main-menu__container--item -active"><a href="#">Финансы</a>
+			<li class="main-menu__container--item"><a href="#">Финансы</a></li>
+			<li class="main-menu__container--item"><a href="#">Тикеты</a><span>15</span></li>
+			<li class="main-menu__container--item"><a href="#">Биржа</a></li>
+			<li class="main-menu__container--item -active"><a href="#">Опции</a>
 				<ul>
-					<li><a href="/finance-subaccount.php">Сабаккаунты</a></li>
-					<li class="-active"><a href="/finance-counters.php">Счетчики</a></li>
+					<li><a href="/option-subaccount.php">Сабаккаунты</a></li>
+					<li class="-active"><a href="/option-counters.php">Счетчики</a></li>
 					<li><a href="#">Парковка</a></li>
 					<li><a href="#">Профиль</a></li>
 				</ul>
 			</li>
-			<li class="main-menu__container--item"><a href="#">Тикеты</a><span>15</span></li>
-			<li class="main-menu__container--item"><a href="#">Биржа</a></li>
-			<li class="main-menu__container--item"><a href="#">Опции</a></li>
 		</ul>
 	</div>
 </div>

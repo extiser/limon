@@ -5,7 +5,7 @@
 	<?php include('blocks/main-menu.php'); ?>
 
 	<!-- Блок новостей -->
-	<?php include('blocks/pages/finance-counters.php'); ?>
+	<?php include('blocks/pages/option-counters.php'); ?>
 
 	<!-- Блок футера -->
 	<? include('blocks/footer.php'); ?>
