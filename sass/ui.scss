@@ -113,3 +113,25 @@ a {
 		margin-top: -21px;
 	}
 }
+
+//pagination 
+.pagination {
+	&__item {
+		font-size: 18px;
+		margin: 0 3px 0 0;
+		&--prev, &--next {
+			@extend .btn--active;
+			padding: 5px;
+			&:hover {
+				border: 0;
+			}
+		}
+		&--link {
+			@extend .btn;
+			padding: 5px 3px;
+		}
+		&--active {
+			font-weight: bold;
+		}
+	}
+}

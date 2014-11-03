@@ -35,12 +35,39 @@
 			&--btn {
 				padding: 2px 5px;
 			}
-			
+		}
+		&--title {
+			color: #75a122;
+		}
+		&--parking {
+			width: 627px;
 		}
 	}
 	&__right {
 		&--title {
 			color: #75a122;
+		}
+		&--parking {
+			width: 627px;
+		}
+		.table-option-parking {
+			width: 627px;
+			margin: 0 0 15px 0;
+			&__row {
+				&--cell {
+					text-align: left;
+					&:first-child {
+						width: 40px;
+						text-align: center;
+					}
+				}
+				&--footer {
+					> .table-option-parking__row--cell {
+						height: 5px;
+						padding: 0;
+					}
+				}
+			}
 		}
 	}
 	&__form {

@@ -33,5 +33,20 @@
 				<p>Данная мера уже давно принята на многих других ПП. Еще раз просим извинения.</p>
 			</div>
 		</div>
+		<!-- /news-list -->
+
+		<div class="pagination pagination--news">
+	        <a href="#" class="pagination__item pagination__item--prev"><</a>
+	        <span class="pagination__item pagination__item--current">1</span>
+	        <a href="#" class="pagination__item pagination__item--link">2</a>
+	        <a href="#" class="pagination__item pagination__item--link">3</a>
+	        <a href="#" class="pagination__item pagination__item--link">4</a>
+	        <a href="#" class="pagination__item pagination__item--link">5</a>
+	        <a href="#" class="pagination__item pagination__item--link">6</a>
+	        <a href="#" class="pagination__item pagination__item--next">></a>
+	    </div>
+	    <!-- /pagination -->
 	</div>
+	<!-- /news -->
 </div>
+<!-- /wrapper -->

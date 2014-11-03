@@ -1,4 +1,8 @@
 .statistics {
+	&--empty {
+		padding: 50px 0;
+		text-align: center;
+	}
 	.filter {
 		@include flex(flex, space-between, center);
 		&__group {
@@ -34,18 +38,20 @@
 	}
 	.table-footer {
 		margin: 15px 0 0 0;
-		@include flex(flex, space-between, center);
 		&__active-pdp {
+			float: left;
 			span {
 				color: #75a122;
 			}
 		}
 		&__referal-link {
 			font-size: 16px;
+			float: right;
 			.input {
 				width: 300px;
 				font-size: 13px;
 			}
 		}
+		@include clearfix;
 	}
 }

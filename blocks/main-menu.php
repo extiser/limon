@@ -38,8 +38,8 @@
 			<li class="main-menu__container--item -active"><a href="#">Опции</a>
 				<ul>
 					<li><a href="/option-subaccount.php">Сабаккаунты</a></li>
-					<li class="-active"><a href="/option-counters.php">Счетчики</a></li>
-					<li><a href="#">Парковка</a></li>
+					<li><a href="/option-counters.php">Счетчики</a></li>
+					<li class="-active"><a href="/option-parking.php">Парковка</a></li>
 					<li><a href="#">Профиль</a></li>
 				</ul>
 			</li>

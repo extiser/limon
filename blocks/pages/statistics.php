@@ -15,6 +15,8 @@
 				<a href="#" class="btn">Текущая неделя</a>
 			</div>
 		</div>
+		<!-- /filter -->
+
 		<div class="filter">
 			<div class="filter__choice">
 				<select name="site" class="select select--choice">
@@ -28,7 +30,13 @@
 				<span class="filter__date--title">Период:</span>
 				<input type="date" name="prev-date" class="date date--prev" /> &mdash;
 				<input type="date" name="next-date" class="date date--next" />
+				<input type="submit" name="ok-date" class="btn btn--active btn__date-ok" value="ОК" />
 			</div>
+		</div>
+		<!-- /filter -->
+
+		<div class="statistics--empty">
+			<h1>Нет данных</h1>
 		</div>
 		
 		<div class="table table-stat">
@@ -203,6 +211,7 @@
 				<div class="table__row--cell table-stat__row--cell">88.00</div>
 			</div>
 		</div>
+		<!-- /table -->
 
 		<div class="table-footer">
 			<div class="plask table-footer__active-pdp">
@@ -215,4 +224,6 @@
 			</div>
 		</div>
 	</div>
+	<!-- /statistics -->
 </div>
+<!-- /wrapper -->
