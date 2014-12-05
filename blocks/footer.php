@@ -4,7 +4,7 @@
 
 			<div class="footer-menu">
 				<ul>
-					<li><a href="#">Фишки</a></li>
+					<li><a href="/fishki.php">Фишки</a></li>
 					<li><a href="#">Правила</a></li>
 					<li><a href="#">FAQ</a></li>
 				</ul>

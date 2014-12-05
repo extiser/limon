@@ -1,0 +1,28 @@
+.exchange-ads{
+	.table-exchange-ads {
+		margin: 10px 0 0 0;
+		width: 610px;
+		&__row{
+			&--cell{
+				text-align: left;
+				padding-left: 20px;
+				font-size: 14px;
+				min-width: 140px;
+				@include box-sizing;
+				vertical-align: middle;
+			}
+		}
+		&__name{
+			color: #75a122;
+			display: block;
+		}
+		&__date{
+			font-size: 12px;
+			display: inline-block;
+			margin: 0 8px 0 0;
+		}
+		&__time{
+			font-size: 12px;
+		}
+	}
+}

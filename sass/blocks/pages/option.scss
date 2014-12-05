@@ -1,5 +1,5 @@
 .option {
-	@include flex(flex, space-around, flex-start);
+	@include flex(flex, space-between, flex-start);
 	margin: 85px 0 0 0;
 	&__title {
 		font-size: 30px;
@@ -127,5 +127,52 @@
 				font-weight: normal;
 			}
 		}
+	}
+	&__data-form{
+		@include clearfix;
+		border: 1px dotted #dfdfd7;
+		padding: 20px 20px 20px 35px;
+		.info-line{
+			margin: 0 0 10px 0;
+			&__option-name{
+				display: inline-block;
+				font-size: 16px;
+				width: 180px;
+			}
+			&__data{
+				width: 198px;
+				height: 30px;
+				@include box-sizing;
+				padding: 10px;
+				font-size: 13px;
+				border: 1px solid #e8e8e8;
+				@include border-radius(3px);
+			}
+			.btn{
+				float: right;
+				margin: 35px 0 0 0;
+			}
+			&--checkbox{
+				margin: 0 0 0 180px;
+			}
+		}
+	}
+}
+.option-profile{
+	.warning{
+		@include background-desktop(validator);
+		width: 330px;
+		display: block;
+		padding: 0 0 0 20px;
+		margin: 20px 0 0 0;
+	}
+	.first-column{
+		float: left;
+	}
+	.second-column{
+		float: right;
+	}
+	.option__right{
+		width: 400px;
 	}
 }

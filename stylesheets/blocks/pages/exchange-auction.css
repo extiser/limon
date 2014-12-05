@@ -1,28 +1,61 @@
 /*
 Error: Undefined mixin 'border-radius'.
-        on line 38 of C:/WebServers/home/web.limon.com/www/sass/ui.scss, in `border-radius'
-        from line 38 of C:/WebServers/home/web.limon.com/www/sass/ui.scss
+        on line 14 of C:/WebServers/home/web.limon.com/www/sass/blocks/pages/exchange-auction.scss, in `border-radius'
+        from line 14 of C:/WebServers/home/web.limon.com/www/sass/blocks/pages/exchange-auction.scss
 
-33: 	display: inline;
-34: 	font-size: 14px;
-35: 	text-decoration: none;
-36: 	background: #f6f6ef;
-37: 	border: 1px solid #edede5;
-38: 	@include border-radius(3px);
-39: 	padding: 5px 15px;
-40: 	@include box-sizing;
-41: 	&--active, &:hover {
-42: 		border-color: #d5e0b6;
-43: 		@include background-image(linear-gradient(#f9fdef, #f0f7dd));
+9: 			&__select{
+10: 				margin: 0 0 0 27px;
+11: 				width: 245px;
+12: 				height: 28px;
+13: 				border: 1px solid #e8e8e8;
+14: 				@include border-radius(3px);
+15: 			}
+16: 			input[type=date]{
+17: 				width: 152px;
+18: 				padding: 5px 0px 5px 26px;
+19: 			}
 
 Backtrace:
-C:/WebServers/home/web.limon.com/www/sass/ui.scss:38:in `border-radius'
-C:/WebServers/home/web.limon.com/www/sass/ui.scss:38
+C:/WebServers/home/web.limon.com/www/sass/blocks/pages/exchange-auction.scss:14:in `border-radius'
+C:/WebServers/home/web.limon.com/www/sass/blocks/pages/exchange-auction.scss:14
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:98:in `with_mixin'
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `map'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `map'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `map'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
@@ -70,4 +103,4 @@ C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/vendor/listen/lib/listen/adapt
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'border-radius'.\A         on line 38 of C:/WebServers/home/web.limon.com/www/sass/ui.scss, in `border-radius'\A         from line 38 of C:/WebServers/home/web.limon.com/www/sass/ui.scss\A \A 33: 	display: inline;\A 34: 	font-size: 14px;\A 35: 	text-decoration: none;\A 36: 	background: #f6f6ef;\A 37: 	border: 1px solid #edede5;\A 38: 	@include border-radius(3px);\A 39: 	padding: 5px 15px;\A 40: 	@include box-sizing;\A 41: 	&--active, &:hover {\A 42: 		border-color: #d5e0b6;\A 43: 		@include background-image(linear-gradient(#f9fdef, #f0f7dd));"; }
+  content: "Error: Undefined mixin 'border-radius'.\A         on line 14 of C:/WebServers/home/web.limon.com/www/sass/blocks/pages/exchange-auction.scss, in `border-radius'\A         from line 14 of C:/WebServers/home/web.limon.com/www/sass/blocks/pages/exchange-auction.scss\A \A 9: 			&__select{\A 10: 				margin: 0 0 0 27px;\A 11: 				width: 245px;\A 12: 				height: 28px;\A 13: 				border: 1px solid #e8e8e8;\A 14: 				@include border-radius(3px);\A 15: 			}\A 16: 			input[type=date]{\A 17: 				width: 152px;\A 18: 				padding: 5px 0px 5px 26px;\A 19: 			}"; }

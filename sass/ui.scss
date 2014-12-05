@@ -67,6 +67,7 @@
 	@extend .select;
 	padding: 5px 8px 5px 28px;
 	@include background-desktop(date, +7px, +7px);
+
 }
 
 // ссылки
@@ -134,4 +135,98 @@ a {
 			font-weight: bold;
 		}
 	}
+}
+
+//title
+.title {
+	font-size: 30px;
+	line-height: 30px;
+	margin: 0 0 20px 0;
+}
+
+.dashed-link{
+	border-bottom: 1px dashed #475675;
+	&--green{
+
+		border-bottom: 1px dashed #87bd23;
+	}
+	&--font-16{
+		font-size: 16px;
+	}
+}
+
+.money{
+	font-size: 34px;
+	line-height: 34px;
+	color: #333;
+	font-weight: bold;
+	display: inline-block;
+	margin: 0 10px 0 0;
+	padding: 0 0 0 40px;
+	&--bag{
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0px;
+			top: -5px;
+			@include background-desktop(bag);
+			@include sprite-dimensions($desktop, bag);
+		}
+	}
+	&--lemon{
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0px;
+			top: -2px;
+			@include background-desktop(lemon);
+			@include sprite-dimensions($desktop, lemon);
+		}
+	}
+}
+.valuta{
+	font-size: 28px;
+	color: #333;
+}
+
+.pole{
+	display: inline-block;
+	font-size: 13px;
+	color: #333;
+	text-decoration: none;
+	background: #fff;
+	border: 1px solid #edede5;
+	padding: 4px 15px;
+	@include box-sizing;
+}
+
+.filter{
+	&__date{
+		&--title{
+			font-size: 16px;
+		}
+	}
+	&__choice{
+		&--title{
+			font-size: 16px;
+		}
+	}
+}
+
+.option-line{
+	margin: 0 0 10px 0;
+}
+
+.option-name{
+	font-size: 16px;
+	display: inline-block;
+	min-width: 140px;
+}
+
+.input-box{
+	@extend .select;
+	width: 100px;
+	padding: 8px 15px 7px 15px;
 }
