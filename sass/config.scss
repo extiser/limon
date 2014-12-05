@@ -48,6 +48,13 @@ input:focus, a:focus {
 }
 // сбросы стилей clear
 
+.clearfix {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
 
 // миксины
 @mixin background-desktop ($url, $x: 0, $y: 0) {
@@ -75,6 +82,15 @@ input:focus, a:focus {
 	@include display-flex($display-flex);
 	@include justify-content($justify-content);
 	@include align-items($align-items);
+}
+
+@mixin flex ($display-flex:"flex", $justify-content:"flex-start", $align-items:"flex-start", $flex-direction:"row", $align-content:"stretch", $flex-wrap:"nowrap") {
+	@include display-flex($display-flex);
+	@include justify-content($justify-content);
+	@include align-items($align-items);
+	@include flex-direction($flex-direction);
+	@include align-content($align-content);
+	@include flex-wrap($flex-wrap);
 }
 @mixin order ($integer) {
 	-webkit-box-ordinal-group: $integer;  

@@ -1,23 +1,20 @@
 /*
-Error: Undefined mixin 'border-radius'.
-        on line 38 of C:/WebServers/home/web.limon.com/www/sass/ui.scss, in `border-radius'
-        from line 38 of C:/WebServers/home/web.limon.com/www/sass/ui.scss
+Error: Undefined mixin 'flex'.
+        on line 3 of C:/WebServers/home/web.limon.com/www/sass/blocks/pages/fishki.scss, in `flex'
+        from line 3 of C:/WebServers/home/web.limon.com/www/sass/blocks/pages/fishki.scss
 
-33: 	display: inline;
-34: 	font-size: 14px;
-35: 	text-decoration: none;
-36: 	background: #f6f6ef;
-37: 	border: 1px solid #edede5;
-38: 	@include border-radius(3px);
-39: 	padding: 5px 15px;
-40: 	@include box-sizing;
-41: 	&--active, &:hover {
-42: 		border-color: #d5e0b6;
-43: 		@include background-image(linear-gradient(#f9fdef, #f0f7dd));
+1: .fishki{
+2: 	padding: 30px 0;
+3: 	@include flex(flex, space-between, flex-start, row, space-between, wrap);
+4: 	@for $i from 1 through 8{
+5: 		.fishka-block-#{$i}{
+6: 			&:before{
+7: 				content: "";
+8: 				position: absolute;
 
 Backtrace:
-C:/WebServers/home/web.limon.com/www/sass/ui.scss:38:in `border-radius'
-C:/WebServers/home/web.limon.com/www/sass/ui.scss:38
+C:/WebServers/home/web.limon.com/www/sass/blocks/pages/fishki.scss:3:in `flex'
+C:/WebServers/home/web.limon.com/www/sass/blocks/pages/fishki.scss:3
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
@@ -70,4 +67,4 @@ C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/vendor/listen/lib/listen/adapt
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'border-radius'.\A         on line 38 of C:/WebServers/home/web.limon.com/www/sass/ui.scss, in `border-radius'\A         from line 38 of C:/WebServers/home/web.limon.com/www/sass/ui.scss\A \A 33: 	display: inline;\A 34: 	font-size: 14px;\A 35: 	text-decoration: none;\A 36: 	background: #f6f6ef;\A 37: 	border: 1px solid #edede5;\A 38: 	@include border-radius(3px);\A 39: 	padding: 5px 15px;\A 40: 	@include box-sizing;\A 41: 	&--active, &:hover {\A 42: 		border-color: #d5e0b6;\A 43: 		@include background-image(linear-gradient(#f9fdef, #f0f7dd));"; }
+  content: "Error: Undefined mixin 'flex'.\A         on line 3 of C:/WebServers/home/web.limon.com/www/sass/blocks/pages/fishki.scss, in `flex'\A         from line 3 of C:/WebServers/home/web.limon.com/www/sass/blocks/pages/fishki.scss\A \A 1: .fishki{\A 2: 	padding: 30px 0;\A 3: 	@include flex(flex, space-between, flex-start, row, space-between, wrap);\A 4: 	@for $i from 1 through 8{\A 5: 		.fishka-block-#{$i}{\A 6: 			&:before{\A 7: 				content: \"\";\A 8: 				position: absolute;"; }

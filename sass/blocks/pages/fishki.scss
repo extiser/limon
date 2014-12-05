@@ -1,0 +1,53 @@
+.fishki{
+	padding: 30px 0;
+	@include flex(flex, space-between, flex-start, row, space-between, wrap);
+	@for $i from 1 through 8{
+		.fishka-block-#{$i}{
+			&:before{
+				content: "";
+				position: absolute;
+				top: 25px;
+				left: 25px;
+				@include background-desktop(fishka-block-#{$i});
+				@include sprite-dimensions($desktop, fishka-block-#{$i});
+			}
+			position: relative;
+			width: 400px;
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 0 20px 0;
+			@include box-sizing;
+			border: 1px dotted #d0d0c5;
+			padding: 34px 40px 34px 74px;
+			.fishka-title{
+				display: block;
+				margin: 0 0 20px 0;
+				color: #75a122;
+				font-size: 22px;
+			}
+			ul{
+				margin: 0px 0 10px 0;
+				&.margin-bottom{
+					margin-bottom: 0;
+				}
+				&.line{
+					li{
+						padding: 0 0 0 20px;
+						position: relative;
+						&:before{
+							content: "";
+							position: absolute;
+							@include background-desktop(green-line);
+							@include sprite-dimensions($desktop, green-line);
+							left: 2px;
+						}
+					}
+				}
+			}
+			.dashed-link{
+				display: inline-block;
+				margin: 10px 0 0 0;
+			}
+		}
+	}
+}

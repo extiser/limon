@@ -1,10 +1,11 @@
 <div class="wrapper">
-	<div class="exchange exchange-buy">
+	<div class="exchange exchange-sell">
 
-		<div class="title title--exchange-ads">Параметры поиска:</div>
-			<div class="exchange-buy__search-options">
-				<div class="container container--left">
-					<form>
+		<div class="title title--exchange-ads">Параметры предложения:</div>
+		<div class="exchange-sell__offers-options">
+			<div class="container container--left">
+				<form>
+					<div>
 						<div class="first-column">
 							<div class="option-line">
 								<span class="option-name">Подписки:</span>
@@ -42,20 +43,6 @@
 									<input type="text" name="" class="input-box input-box--next exchange-buy__input-box--next" />
 								</div>
 							</div>
-							<div class="option-line">
-								<span class="option-name">Цена подписки:</span>
-								<div class="filter__date filter__date--exchange-buy">
-									<span class="filter__date--title exchange-buy__filter--date-title">от</span>
-									<input type="text" name="" class="input-box input-box--prev exchange-buy__input-box--prev" />
-									<span class="filter__date--title exchange-buy__filter--date-title">до</span>
-									<input type="text" name="" class="input-box input-box--next exchange-buy__input-box--next" />
-								</div>
-							</div>
-							<div class="option-line high">
-								<span class="option-name">Продажа подписок:</span>
-								<label><input type="checkbox" checked="checked">Частями</label>
-								<label><input type="checkbox">Целиком</label>
-							</div>
 							<div class="option-line high">
 								<span class="option-name">Операторы:</span>
 								<label><input type="checkbox" checked="checked">Билайн</label>
@@ -63,10 +50,24 @@
 								<label><input type="checkbox">Мегафон</label>
 							</div>
 							<div class="option-line high">
-								<span class="option-name">Продавцы:</span>
-								<select class="option-line__select">
-									<option></option>
-								</select>
+								<span class="option-name">Субаккаунты:</span>
+								<div class="list">
+									<div>
+										<label><input type="checkbox" checked="checked">Все</label>
+									</div>
+									<div>
+										<label><input type="checkbox">wap</label>
+									</div>
+									<div>
+										<label><input type="checkbox">wap</label>
+									</div>
+									<div>
+										<label><input type="checkbox">wap</label>
+									</div>
+									<div>
+										<label><input type="checkbox">wap</label>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="second-column">
@@ -104,38 +105,67 @@
 								</div>
 							</div>
 							<div class="option-line">
-								<div>
-									<span class="warning">* - обратите внимание, что данный параметр новый и действует только на подписки созданные с 22.02.2012</span>
-								</div>
-								<div>
-									<input class="btn btn--active" type="submit" value="Найти">
+								<div class="list">
+									<div>
+										<label><input type="checkbox" checked="checked">xxvideoxss.org</label>
+									</div>
+									<div>
+										<label><input type="checkbox">blacktube2ss.com</label>
+									</div>
+									<div>
+										<label><input type="checkbox">blacktube2ss.com</label>
+									</div>
+									<div>
+										<label><input type="checkbox">blacktube2ss.com</label>
+									</div>
+									<div>
+										<label><input type="checkbox">blacktube2ss.com</label>
+									</div>
+									<div>
+										<label><input type="checkbox">blacktube2ss.com</label>
+									</div>
+									<div>
+										<label><input type="checkbox">blacktube2ss.com</label>
+									</div>
+									<div>
+										<label><input type="checkbox">blacktube2ss.com</label>
+									</div>
+									<div>
+										<label><input type="checkbox">blacktube2ss.com</label>
+									</div>
 								</div>
 							</div>
 						</div>
-					</form>
-				</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="option-line line-warning">
+							<span class="warning">* - обратите внимание, что данный параметр новый и действует только на подписки созданные с 22.02.2012</span>
+							<input class="btn btn--active" type="submit" value="Найти">
+					</div>
+				</form>
+			</div>
 
-				<div class="container container--right">
-					<div class="balance">
-						<span class="balance__title">Ваш баланс:</span>
-						<div class="balance__rub">
-							<div class="group">
-								<span class="money money--bag">20 394</span><span class="valuta">руб</span></br>
-								<a href="#" class="dashed-link dashed-link--balance">Пополнить счет</a>
-							</div>
+			<div class="container container--right">
+				<div class="balance">
+					<span class="balance__title">Ваш баланс:</span>
+					<div class="balance__rub">
+						<div class="group">
+							<span class="money money--bag">20 394</span><span class="valuta">руб</span><br>
+							<a href="#" class="dashed-link dashed-link--balance">Пополнить счет</a>
 						</div>
-						<div class="balance__limons">
-							<div class="group">
-								<span class="money money--lemon">3874</span><span class="valuta">лимонов</span></br>
-								<a href="#" class="dashed-link dashed-link--balance">Условия</a>
-							</div>
+					</div>
+					<div class="balance__limons">
+						<div class="group">
+							<span class="money money--lemon">3874</span><span class="valuta">лимонов</span><br>
+							<a href="#" class="dashed-link dashed-link--balance">Условия</a>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 		<div class="buy-selected">
 			<form>
-				<input class="btn btn--active" type="submit" value="Купить выбранные">
+				<input class="btn btn--active" type="submit" value="Снять с продажи">
 
 				<div class="filter filter--exchange-buy">
 					<div class="filter__date filter__date--exchange-buy">
@@ -156,7 +186,7 @@
 					<div class="table__row table__row--header">
 						<div class="table__row--cell"><input type="checkbox"></div>
 						<div class="table__row--cell">№</div>
-						<div class="table__row--cell">Продавец</div>
+						<div class="table__row--cell">Продажа/Аукцион</div>
 						<div class="table__row--cell">Дата размещения</div>
 						<div class="table__row--cell">Биллинги</div>
 						<div class="table__row--cell">Тематика</div>
@@ -172,7 +202,7 @@
 					<div class="table__row table__row--tbody">
 						<div class="table__row--cell"><input type="checkbox"></div>
 						<div class="table__row--cell"><a href="#" class="dashed-link dashed-link--balance">15315</a></div>
-						<div class="table__row--cell">mozg</div>
+						<div class="table__row--cell">Продажа</div>
 						<div class="table__row--cell">12-09-2014</div>
 						<div class="table__row--cell">Борнпей</div>
 						<div class="table__row--cell">WAP</div>
@@ -188,7 +218,7 @@
 					<div class="table__row table__row--tbody">
 						<div class="table__row--cell"><input type="checkbox"></div>
 						<div class="table__row--cell"><a href="#" class="dashed-link dashed-link--balance">15315</a></div>
-						<div class="table__row--cell">mozg</div>
+						<div class="table__row--cell">Продажа</div>
 						<div class="table__row--cell">12-09-2014</div>
 						<div class="table__row--cell">Борнпей</div>
 						<div class="table__row--cell">WAP</div>
@@ -204,7 +234,7 @@
 					<div class="table__row table__row--tbody">
 						<div class="table__row--cell"><input type="checkbox"></div>
 						<div class="table__row--cell"><a href="#" class="dashed-link dashed-link--balance">15315</a></div>
-						<div class="table__row--cell">mozg</div>
+						<div class="table__row--cell">Продажа</div>
 						<div class="table__row--cell">12-09-2014</div>
 						<div class="table__row--cell">Борнпей</div>
 						<div class="table__row--cell">WAP</div>
@@ -220,7 +250,7 @@
 					<div class="table__row table__row--tbody">
 						<div class="table__row--cell"><input type="checkbox"></div>
 						<div class="table__row--cell"><a href="#" class="dashed-link dashed-link--balance">15315</a></div>
-						<div class="table__row--cell">mozg</div>
+						<div class="table__row--cell">Продажа</div>
 						<div class="table__row--cell">12-09-2014</div>
 						<div class="table__row--cell">Борнпей</div>
 						<div class="table__row--cell">WAP</div>
@@ -236,7 +266,7 @@
 					<div class="table__row table__row--tbody">
 						<div class="table__row--cell"><input type="checkbox"></div>
 						<div class="table__row--cell"><a href="#" class="dashed-link dashed-link--balance">15315</a></div>
-						<div class="table__row--cell">mozg</div>
+						<div class="table__row--cell">Продажа</div>
 						<div class="table__row--cell">12-09-2014</div>
 						<div class="table__row--cell">Борнпей</div>
 						<div class="table__row--cell">WAP</div>
@@ -252,7 +282,7 @@
 					<div class="table__row table__row--tbody">
 						<div class="table__row--cell"><input type="checkbox"></div>
 						<div class="table__row--cell"><a href="#" class="dashed-link dashed-link--balance">15315</a></div>
-						<div class="table__row--cell">mozg</div>
+						<div class="table__row--cell">Продажа</div>
 						<div class="table__row--cell">12-09-2014</div>
 						<div class="table__row--cell">Борнпей</div>
 						<div class="table__row--cell">WAP</div>
@@ -268,7 +298,7 @@
 					<div class="table__row table__row--tbody">
 						<div class="table__row--cell"><input type="checkbox"></div>
 						<div class="table__row--cell"><a href="#" class="dashed-link dashed-link--balance">15315</a></div>
-						<div class="table__row--cell">mozg</div>
+						<div class="table__row--cell">Продажа</div>
 						<div class="table__row--cell">12-09-2014</div>
 						<div class="table__row--cell">Борнпей</div>
 						<div class="table__row--cell">WAP</div>
@@ -284,7 +314,7 @@
 					<div class="table__row table__row--tbody">
 						<div class="table__row--cell"><input type="checkbox"></div>
 						<div class="table__row--cell"><a href="#" class="dashed-link dashed-link--balance">15315</a></div>
-						<div class="table__row--cell">mozg</div>
+						<div class="table__row--cell">Продажа</div>
 						<div class="table__row--cell">12-09-2014</div>
 						<div class="table__row--cell">Борнпей</div>
 						<div class="table__row--cell">WAP</div>
@@ -300,7 +330,8 @@
 				</div>
 				<!-- /table -->
 			</form>
-	</div>
+		</div>
 	<!-- /exchange exchange-ads -->
-</div>
+	</div>
 <!-- /wrapper -->
+</div>
