@@ -36,6 +36,80 @@
 				padding: 2px 5px;
 			}
 		}
+		.parking-block{
+			border: 1px dotted #dfdfd7;
+			padding: 20px 20px 20px 35px;
+			background-color: #fafaf7;
+			&__title{
+				font-size: 16px;
+				color: #333;
+				display: block;
+			}
+			&__form-header{
+				@include clearfix;
+				margin: 0 0 5px 0;
+				.parking-block__title{
+					float: left;
+				}
+				.dashed-link{
+					float: right;
+				}
+			}
+			&__line{
+				width: 530px;
+				float: left;
+				height: 30px;
+				border: 1px solid #e8e8e8;
+				padding: 10px;
+				margin: 0 7px 0 0;
+				@include border-radius(3px);
+				@include box-sizing;
+				&--short{
+					width: 385px;
+				}
+			}
+			&__select{
+				height: 30px;
+				border: 1px solid #e8e8e8;
+				padding: 0 8px 0 10px;
+				margin: 0 7px 0 0;
+				@include border-radius(3px);
+				@include box-sizing;
+			}
+			ol{
+				margin: 15px 0 40px;
+				counter-reset: point;
+				li{
+					margin: 0 0 15px 0;
+					padding: 0 0 0 40px;
+					position: relative;
+					&:before {
+						content: counter(point);
+						counter-increment: point 1; 
+						font-size: 16px;
+						position: absolute;
+						left: 0px;
+						top: -5px;
+						width: 20px;
+						padding: 6px 5px;
+						@include border-radius(50%);
+						background-color: #fff;
+						border: 1px solid #e8e8e8;
+						color: #739c02;
+						text-align: center;
+						font-weight: bold;
+					}
+				}
+			}
+			.btn{
+				padding: 6px 7px;
+				float: right;
+			}
+			&__form{
+				@include clearfix;
+				margin: 23px 0 10px 0;
+			}
+		}
 		&--title {
 			color: #75a122;
 		}
@@ -155,6 +229,31 @@
 			&--checkbox{
 				margin: 0 0 0 180px;
 			}
+		}
+	}
+	&__password-change{
+		background: #fafaf7 url(../images/password-bg.png) no-repeat 270px center;
+		border: 1px dotted #dfdfd7;
+		padding: 20px 20px 20px 35px;
+		.info-line{
+			&__option-name{
+				display: inline-block;
+				font-size: 16px;
+				width: 180px;
+			}
+			&__data{
+				width: 198px;
+				height: 30px;
+				@include box-sizing;
+				padding: 10px;
+				font-size: 13px;
+				border: 1px solid #e8e8e8;
+				@include border-radius(3px);
+				margin: 5px 0 10px;
+			}
+		}
+		.btn{
+			margin: 12px 0 0 0;
 		}
 	}
 }
