@@ -1,0 +1,184 @@
+.tds{
+	@include clearfix;
+	border: 1px dotted #dfdfd7;
+	padding: 20px 27px 20px 22px;
+	position: relative;
+	top: 20px;
+	.top-info-block{
+		padding: 0 0 20px;
+		border-bottom: 1px dotted #e8e8e8;
+		&__title{
+			font-size: 16px;
+			margin: 0 13px 0 0;
+		}
+		&__line{
+			height: 29px;
+			border: 1px solid #e8e8e8;
+			@include border-radius(3px);
+			@include box-sizing;
+			&--name{
+				width: 270px;
+				padding: 0 10px;
+			}
+			&--link{
+				width: 400px;
+				padding: 0 10px;
+			}
+		}
+		.name{
+			float: left;
+			margin: 0 35px 0 0;
+		}
+		.link{
+			float: left;
+			.cross{
+				display: inline-block;
+				@include background-desktop(cross);
+				@include sprite-dimensions($desktop, cross);
+				position: relative;
+				left: -20px;
+				cursor: pointer;
+			}
+		}
+		.distribution{
+			float: left;
+		}
+	}
+	.domain-item{
+		margin: 15px 0 0 0;
+		border-bottom: 1px dotted #e8e8e8;
+		padding: 0 0 15px 0;
+		&__name{
+			font-size: 16px;
+			color: #739c02;
+			text-transform: uppercase;
+			border: 1px solid #e8e8e8;
+			@include border-radius(100%);
+			display: inline-block;
+			padding: 7px 7px 7px 6px;
+			text-align: center;
+			font-weight: bold;
+			margin: 0 20px 0 0;
+		}
+		&__link{
+			width: 825px;
+			height: 30px;
+			@include box-sizing;
+			border: 1px solid #e8e8e8;
+			padding: 0 10px;
+			@include border-radius(3px);
+		}
+		.domain-panel{
+			float: left;
+		}
+		.counter{
+			width: 310px;
+			float: right;
+			&__value{
+				font-size: 14px;
+				font-weight: bold;
+				line-height: 35px;
+			}
+			&__label{
+				font-size: 13px;
+				line-height: 35px;
+			}
+			.counter-panel{
+				float: right;
+				line-height: 36px;
+				&__up-arrow{
+					border: 1px solid #edede5;
+					background-color: #f6f6ef;
+					@include border-radius(3px);
+					height: 30px;
+					width: 30px;
+					@include box-sizing;
+					display: inline-block;
+					cursor: pointer;
+					@include background-desktop(up-arrow, 9px, 10px);
+					margin: 0 0 0 2px;
+					vertical-align: middle;
+				}
+				&__down-arrow{
+					border: 1px solid #edede5;
+					background-color: #f6f6ef;
+					@include border-radius(3px);
+					height: 30px;
+					width: 30px;
+					@include box-sizing;
+					display: inline-block;
+					cursor: pointer;
+					@include background-desktop(down-arrow, 10px, 10px);
+					vertical-align: middle;
+				}
+				&__cross{
+					border: 1px solid #edede5;
+					background-color: #f6f6ef;
+					@include border-radius(3px);
+					height: 30px;
+					width: 30px;
+					@include box-sizing;
+					display: inline-block;
+					cursor: pointer;
+					@include background-desktop(cross, 9px, 9px);
+					margin: 0 0 0 3px;
+					vertical-align: middle;
+				}
+			}
+			@include clearfix;
+		}
+		@include clearfix;
+	}
+	.reset-statistics{
+		margin: 15px 0 0 0;
+		float: right;
+		display: inline-block;
+	}
+	.add-domain{
+		margin: 50px 0 0 0;
+		width: 435px;
+		float: left;
+		&__add{
+			display: block;
+			margin: 0 0 5px 0;
+		}
+		&__plus{
+			cursor: pointer;
+			border: 1px solid #e8e8e8;
+			@include border-radius(100%);
+			display: inline-block;
+			padding: 10px;
+			text-align: center;
+			margin: 0 18px 0 0;
+			@include background-desktop(plus, 10px, 10px);
+			@include sprite-dimensions($desktop, plus);
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.dashed-link{
+			&--add-domain{
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+	.redirect-code{
+		margin: 50px 0 0 0;
+		float: left;
+		&__title{
+			display: block;
+			font-size: 16px;
+			margin: 0 0 10px 0;
+		}
+		&__code{
+			border: 1px solid #e8e8e8;
+			padding: 15px;
+			font-size: 13px;
+			width: 440px;
+			height: 110px;
+			@include box-sizing;
+			@include border-radius(3px);
+		}
+	}
+	@include clearfix;
+}

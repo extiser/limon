@@ -30,8 +30,24 @@
 					<li><a href="#">Проверка доменов</a></li>
 				</ul>
 			</li>
-			<li class="main-menu__container--item"><a href="#">Промо</a></li>
-			<li class="main-menu__container--item"><a href="#">ТДС</a></li>
+			<li class="main-menu__container--item"><a href="/constructor.php">Промо</a>
+				<ul>
+					<li class="-active"><a href="/constructor.php">Конструктор ссылок</a></li>
+					<li><a href="#">Ключевики</a></li>
+					<li><a href="#">Шаблоны</a></li>
+					<li><a href="#">Модули CMS</a></li>
+				</ul>
+			</li>
+			<li class="main-menu__container--item -active"><a href="/tds.php">ТДС</a>
+				<ul>
+					<li class="-active"><a href="#">Схема</a></li>
+					<li><a href="#">Схема mobvidsoo.com</a></li>
+					<li><a href="#">Схема mobvidsoo.com</a></li>
+					<li><a href="#">Схема mobvidsoo.com</a></li>
+					<li><a href="#">Схема mobvidsoo.com</a></li>
+					<li><a href="#">Схема mobvidsoo.com</a></li>
+				</ul>
+			</li>
 			<li class="main-menu__container--item"><a href="#">Финансы</a>
 				<ul>
 					<li class="-active"><a href="/finance-balance.php">Баланс</a></li>
@@ -58,7 +74,7 @@
 					<li><a href="/exchange-ads.php">Топ</a></li>
 				</ul>
 			</li>
-			<li class="main-menu__container--item -active"><a href="#">Опции</a>
+			<li class="main-menu__container--item"><a href="#">Опции</a>
 				<ul>
 					<li><a href="/option-subaccount.php">Сабаккаунты</a></li>
 					<li><a href="/option-counters.php">Счетчики</a></li>

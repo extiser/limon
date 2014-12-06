@@ -56,6 +56,21 @@
 		</div>
 		<div class="option__right">
 			<div class="option__title option__right--title">Изменить пароль</div>
+			<div class="option__password-change">
+				<div class="info-line">
+					<span class="info-line__option-name">Новый пароль</span>
+					<input type="password" class="info-line__data" placeholder="*************">
+				</div>
+				<div class="info-line">
+					<span class="info-line__option-name">Повторить новый пароль</span>
+					<input type="password" class="info-line__data" placeholder="*************">
+				</div>
+				<div class="info-line">
+					<span class="info-line__option-name">Старый пароль</span>
+					<input type="password" class="info-line__data" placeholder="*************">
+				</div>
+				<input class="btn btn--active" type="submit" value="Сохранить пароль">
+			</div>
 		</div>
 	</div>
 </div>
