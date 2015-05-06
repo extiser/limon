@@ -1,0 +1,149 @@
+.exchange-auction{
+	.first-column{
+		float: left;
+		margin: 0 0 0 20px;
+		label{
+			margin: 0 0 0 27px;
+		}
+		.option-line{
+			&__select{
+				margin: 0 0 0 27px;
+				width: 245px;
+				height: 28px;
+				border: 1px solid #e8e8e8;
+				@include border-radius(3px);
+			}
+			input[type=date]{
+				width: 152px;
+				padding: 5px 0px 5px 26px;
+			}
+		}
+		.high{
+			margin: 20px 0 0px;
+			.option-name{
+				vertical-align: middle;
+			}
+		}
+		.btn {
+			padding: 6px 30px;
+			margin: 0 0 0 80px;
+		}
+	}
+	.buy-selected{
+		.table{
+			width: 100%;
+			margin: 10px 0 0 0;
+		}
+		.filter__choice--exchange-buy{
+			float: right;
+		}
+		.filter__date--exchange-buy{
+			margin: 0 0 0 0px;
+		}
+	}
+	.container--right{
+		width: 270px;
+	}
+	&__offers-options{
+		@include clearfix;
+		@include box-sizing;
+		padding: 20px 0 20px;
+		background-color: #fafaf7;
+		border: 1px dotted #dfdfd7;
+		margin: 0 0 20px 0;
+	}
+	&__filter{
+		display: inline-block;
+		&--date-title{
+			width: 23px;
+			display: inline-block;
+		}
+	}
+	&__date{
+		&--prev{
+			display: inline-block;
+			margin: 0 20px 0 0;
+		}
+	}
+	&__input-box{
+		&--prev{
+			margin: 0 73px 0 0;
+		}
+	}
+	.balance{
+		&__title{
+			font-size: 16px;
+			color: #333;
+			display: block;
+			margin: 7px 0 15px 0;
+		}
+		&__rub{
+			.group{
+				position: relative;
+				margin: 0 0 20px 0;
+				&:before {
+					content: "";
+					position: absolute;
+					left: 0px;
+					top: -5px;
+					@include background-desktop(bag);
+					@include sprite-dimensions($desktop, bag);
+				}
+				.money{
+					&--bag{
+						font-size: 18px;
+						line-height: 18px;
+						margin: 0 5px 0 0;
+						&:before {
+							display: none;
+						}
+					}
+				}
+				.valuta{
+					font-size: 14px;
+				}
+				.dashed-link{
+					&--balance{
+						font-size: 13px;
+						display: inline-block;
+						margin: 0 0 0 40px;
+					}
+				}
+			}
+		}
+		&__limons{
+			.group{
+				position: relative;
+				margin: 0 0 20px 0;
+				&:before {
+					content: "";
+					position: absolute;
+					left: 0px;
+					top: -5px;
+					@include background-desktop(lemon);
+					@include sprite-dimensions($desktop, lemon);
+				}
+				.money{
+					&--lemon{
+						font-size: 18px;
+						line-height: 18px;
+						margin: 0 5px 0 0;
+						&:before {
+							display: none;
+						}
+					}
+				}
+				.valuta{
+					font-size: 14px;
+				}
+				.dashed-link{
+					&--balance{
+						font-size: 13px;
+						display: inline-block;
+						margin: 0 0 0 40px;
+					}
+				}
+			}
+		}
+	}
+}

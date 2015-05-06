@@ -1,0 +1,270 @@
+.exchange{
+	padding: 20px 0 0 0;
+	.container{
+		&--left{
+			float: left;
+		}
+		&--right{
+			float: right;
+			position: relative;
+		}
+		@include clearfix;
+		.title{
+			&--exchange-ads{
+				margin: 0;
+			}
+		}
+		.btn{
+			&--create-ads{
+				position: absolute;
+				right: 0;
+			}
+		}
+	}
+	@include clearfix;
+	.table-exchange-ads {
+		margin: 10px 0 0 0;
+		width: 610px;
+		&__row{
+			&--cell{
+				text-align: left;
+				padding-left: 20px;
+				font-size: 14px;
+				min-width: 140px;
+				@include box-sizing;
+				vertical-align: middle;
+			}
+		}
+		&__name{
+			color: #75a122;
+			display: block;
+		}
+		&__date{
+			font-size: 12px;
+			display: inline-block;
+			margin: 0 8px 0 0;
+		}
+		&__time{
+			font-size: 12px;
+		}
+	}
+	.filter{
+		&--exchange-buy{
+			}
+		&__date{
+			&--exchange-buy{
+				display: inline-block;
+			}
+		}
+		&__choice{
+			&--exchange-buy{
+				display: inline-block;
+			}
+		}
+	}
+	&-buy{
+		.container--right{
+			width: 270px;
+		}
+		&__search-options{
+			@include clearfix;
+			@include box-sizing;
+			padding: 20px 0 0px;
+			background-color: #fafaf7;
+			border: 1px dotted #dfdfd7;
+			margin: 0 0 20px 0;
+		}
+		&__filter{
+			display: inline-block;
+			&--date-title{
+				width: 23px;
+				display: inline-block;
+			}
+		}
+		&__date{
+			&--prev{
+				display: inline-block;
+				margin: 0 20px 0 0;
+			}
+		}
+		&__input-box{
+			&--prev{
+				margin: 0 73px 0 0;
+			}
+		}
+		.balance{
+			&__title{
+				font-size: 16px;
+				color: #333;
+				display: block;
+				margin: 7px 0 15px 0;
+			}
+			&__rub{
+				.group{
+					position: relative;
+					margin: 0 0 20px 0;
+					&:before {
+						content: "";
+						position: absolute;
+						left: 0px;
+						top: -5px;
+						@include background-desktop(bag);
+						@include sprite-dimensions($desktop, bag);
+					}
+					.money{
+						&--bag{
+							font-size: 18px;
+							line-height: 18px;
+							margin: 0 5px 0 0;
+							&:before {
+								display: none;
+							}
+						}
+					}
+					.valuta{
+						font-size: 14px;
+					}
+					.dashed-link{
+						&--balance{
+							font-size: 13px;
+							display: inline-block;
+							margin: 0 0 0 40px;
+						}
+					}
+				}
+			}
+			&__limons{
+				.group{
+					position: relative;
+					margin: 0 0 20px 0;
+					&:before {
+						content: "";
+						position: absolute;
+						left: 0px;
+						top: -5px;
+						@include background-desktop(lemon);
+						@include sprite-dimensions($desktop, lemon);
+					}
+					.money{
+						&--lemon{
+							font-size: 18px;
+							line-height: 18px;
+							margin: 0 5px 0 0;
+							&:before {
+								display: none;
+							}
+						}
+					}
+					.valuta{
+						font-size: 14px;
+					}
+					.dashed-link{
+						&--balance{
+							font-size: 13px;
+							display: inline-block;
+							margin: 0 0 0 40px;
+						}
+					}
+				}
+			}
+		}
+		.buy-selected{
+			.table{
+				width: 100%;
+				margin: 10px 0 0 0;
+			}
+			input[type=submit]{
+				padding: 7px 15px;
+				float: left;
+			}
+			.filter__choice--exchange-buy{
+				float: right;
+			}
+			.filter__date--exchange-buy{
+				margin: 0 0 0 240px;
+			}
+		}
+		.first-column, .second-column{
+			float: left;
+			margin: 0 0 0 20px;
+		}
+		.option-line{
+			margin: 0 0 13px 0;
+		}
+		.first-column{
+			label{
+				margin: 0 0 0 27px;
+			}
+			.option-line{
+				&__select{
+					margin: 0 0 0 27px;
+					width: 245px;
+					height: 28px;
+					border: 1px solid #e8e8e8;
+					@include border-radius(3px);
+				}
+				input[type=date]{
+					width: 152px;
+					padding: 5px 0px 5px 26px;
+				}
+			}
+			.high{
+				margin: 20px 0 0px;
+			}
+		}
+		.second-column{
+			width: 370px;
+			.option-line{
+				margin: 7px 0 23px 0;
+				.option-name{
+					min-width: 70px;
+					text-align: right;
+					margin: 0 20px 0 0;
+					float: left;
+				}
+				div{
+					.warning{
+						@include background-desktop(validator);
+						width: 256px;
+						float: right;
+						display: block;
+						padding: 0 0 0 20px;
+					}
+					@include clearfix;
+				}
+				div{
+					input[type=submit]{
+						float: right;
+						padding: 7px 34px;
+						margin: 30px 0 0 0;
+					}
+					@include clearfix;
+				}
+				.label-box{
+					width: 280px;
+					float: left;
+					&--left{
+						float: left;
+						display: inline-block;
+						label{
+							display: block;
+							width: 140px;
+							overflow: hidden;
+						}
+					}
+					&--right{
+						float: right;
+						display: inline-block;
+						label{
+							display: block;
+							width: 140px;
+							overflow: hidden;
+						}
+					}
+					@include clearfix;
+				}
+				@include clearfix;
+			}
+		}
+	}
+}

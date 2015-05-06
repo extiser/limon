@@ -1,0 +1,167 @@
+.promo{}
+.constructor{
+	padding: 10px 0 0 0;
+	.parameter-block{
+		@include clearfix;
+		border: 1px dotted #dfdfd7;
+		padding: 20px 20px 20px 35px;
+		&__first-column{
+			float: left;
+			width: 425px;
+			margin: 0 70px 0 0;
+		}
+		&__second-column{
+			float: left;
+			width: 700px;
+		}
+		.parameter-line{
+			margin: 0 0 10px 0;
+			&__option-name{
+				width: 200px;
+				display: inline-block;
+				font-size: 16px;
+			}
+			&__select{
+				display: inline-block;
+				border: 1px solid #e8e8e8;
+				width: 206px;
+				height: 30px;
+				@include border-radius(3px);
+				@include box-sizing;
+			}
+			&--checkbox{
+				margin: 0 0 0 200px;
+			}
+		}
+		&__title{
+			font-size: 16px;
+			font-weight: bold;
+			display: block;
+			margin: 0 0 5px 0;
+			&--top{
+				margin: 28px 0 0 0;
+			}
+		}
+		&__name{
+			font-size: 13px;
+			font-weight: bold;
+		}
+		&__explanation{
+			font-size: 13px;
+		}
+		&__ranges-table{
+			float: right;
+		}
+		.parameters{
+			float: left;
+		}
+	}
+	.url-block{
+		margin: 15px 0 0 0;
+		border: 1px solid #dfdfd7;
+		text-align: center;
+		background-color: #fafaf7;
+		padding: 20px 0;
+		&__title{
+			font-size: 16px;
+			font-weight: bold;
+			margin: 0 15px 0 0;
+		}
+		&__link{
+			display: inline-block;
+			line-height: 13px;
+			font-size: 13px;
+			border: 1px solid #e8e8e8;
+			padding: 6px 10px 7px;
+			background-color: #fff;
+			width: 730px;
+			@include box-sizing;
+			text-align: left;
+			margin: 0 10px 0 0;
+		}
+		.btn{
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	.title{
+		margin: 0 0 5px 0;
+	}
+	&__setting{
+		margin: 30px 0 0 0;
+		.description{
+			font-size: 14px;
+		}
+		.wordlist-block{
+			margin: 25px 0 0 0;
+			float: left;
+			&__title{
+				display: block;
+				font-size: 16px;
+				font-weight: bold;
+				margin: 0 0 10px 0;
+			}
+			&__search-line{
+				border: 1px solid #e8e8e8;
+				padding: 7px 0 4px 25px;
+				width: 400px;
+				@include box-sizing;
+				margin: 0 0 10px 0;
+				@include background-desktop(magnifier, 6, 6);
+			}
+			&__list{
+				background: #fff url(../images/list.png) no-repeat right;
+				display: block;
+				width: 400px;
+				height: 227px;
+				@include box-sizing;
+				overflow: auto;
+				border: solid 1px #e8e8e8;
+				background-color: #fff;
+				span{
+					padding: 0 0 0 15px;
+					display: block;
+					height: 25px;
+					width: 380px;
+					@include box-sizing;
+					border-bottom: 1px dotted #d1d1d1;
+					font-size: 13px;
+					line-height: 25px;
+				}
+			}
+			&--right{
+				float: right;
+			}
+			&--middle{
+				margin: 25px 30px 0;
+			}
+			&--close{
+				.wordlist-block__list{
+					height: 266px;
+					background: #fff url(../images/list-close.png) no-repeat right;
+					span{
+						height: 24px;
+						position: relative;
+						&:after{
+							content: "";
+							position: absolute;
+							right: 7px;
+							top: 7px;
+							@include background-desktop(cross);
+							@include sprite-dimensions($desktop, cross);
+							cursor: pointer;
+						}
+					}
+				}
+				.btn{
+					margin: 10px 0 0 0;
+				}
+			}
+		}
+		@include clearfix;
+	}
+	input[type=checkbox]{
+		position: relative;
+		top: 2px;
+	}
+}

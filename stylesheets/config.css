@@ -64,6 +64,14 @@ input:focus, a:focus {
   outline: 0px solid #fff;
 }
 
+.clearfix {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
 body {
   background: #fff;
   font-family: 'MyriadPro';

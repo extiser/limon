@@ -1,0 +1,47 @@
+.exchange{
+	padding: 20px 0 0 0;
+	.container{
+		&--left{
+			float: left;
+		}
+		&--right{
+			float: right;
+			position: relative;
+		}
+		@include clearfix;
+		.title{
+			&--exchange-ads{
+				margin: 0;
+			}
+		}
+		.btn{
+			&--create-ads{
+				position: absolute;
+				right: 0;
+			}
+		}
+	}
+	@include clearfix;
+	.table{
+		width: 100%;
+		margin: 10px 0 0 0;
+	}
+	.filter{
+		&--exchange-buy{
+			}
+		&__date{
+			&--exchange-buy{
+				display: inline-block;
+			}
+		}
+		&__choice{
+			&--exchange-buy{
+				display: inline-block;
+			}
+		}
+	}
+	input[type=checkbox]{
+		position: relative;
+		top: 2px;
+	}
+}

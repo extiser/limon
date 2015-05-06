@@ -1,0 +1,99 @@
+.finance{
+	padding: 20px 0 0 0;
+	.container{
+		&--left{
+			float: left;
+		}
+		&--right{
+			float: right;
+		}
+	}
+	@include clearfix;
+	.filter{
+		&__date{
+			.date{
+				width: 164px;
+			}
+			&--finance{
+				margin: 0 0 10px 0;
+				display: inline-block;
+			}
+		}
+		&__choice{
+			&--finance{
+				display: inline-block;
+				float: right;
+			}
+		}
+		@include clearfix;
+	}
+	.table-stat {
+		margin: 10px 0 0 0;
+		width: 610px;
+		&__row{
+			&--cell{
+				text-align: left;
+				padding-left: 15px;
+			}
+			&--last{
+				text-align: center;
+			}
+		}
+	}
+	.balance{
+		border-bottom: 1px dashed #cdcdcd;
+		border-top: 1px dashed #cdcdcd;
+		background: #f8f8f3;
+		padding: 25px 60px 40px 35px;
+		.dashed-link{
+				&--balance{
+					display: inline-block;
+					margin: 0 0 0 40px;
+				}
+		}
+		&__title{
+			font-size: 16px;
+			color: #333;
+			display: block;
+			&--rub{
+				margin: 40px 0 10px 0;
+			}
+			&--limons{
+				margin: 45px 0 16px 0;
+			}
+		}
+		&__rub{
+			float: left;
+			padding: 18px 0 0 0;
+			.btn{
+				&--balance-rub{
+					margin: 17px 0 0 0;
+					width: 220px;
+					display: block;
+					padding: 7px 37px 5px;
+					text-align: center;
+					font-size: 16px;
+				}
+			}
+			.pole{
+				&--balance{
+					margin: 0 8px 0 0;
+				}
+			}
+		}
+		&__limons{
+			float: left;
+			padding: 18px 0 0 0;
+			margin: 0 0 0 35px;
+			.narrow{
+				margin: 25px 0 0 0;
+				display: block;
+				width: 235px;
+			}
+		}
+		@include clearfix;
+	}
+	.automatically-purchased{
+		margin: 65px 0 0 0;
+	}
+}
